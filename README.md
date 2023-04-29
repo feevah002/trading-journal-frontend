@@ -21,8 +21,6 @@ The Trade Journal API front-end includes the following features:
 ## Dependencies
 
 The front-end requires the following dependencies:
-
-- jQuery: A fast, small, and feature-rich JavaScript library.
 - Bootstrap: A popular CSS framework for building responsive and mobile-first websites.
 
 ## Contributing
