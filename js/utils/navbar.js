@@ -75,7 +75,7 @@ class Navbar {
         const login = div.querySelector("#login");
 
         function state() {
-          if (!userToken) {
+          if (!userToken()) {
             logout.style.display = "none";
             login.style.display = "inline-block";
             signup.style.display = "inline-block";
