@@ -2,7 +2,7 @@ import Requests from "./request.js";
 const { userToken } = new Requests();
 class Navbar {
   getNavbar() {
-    fetch("http://127.0.0.1:5500/navbar.html")
+    fetch("https://feevah002.github.io/trading-journal-frontend/navbar.html")
       .then((response) => response.text())
       .then((html) => {
         const div = document.createElement("div");
@@ -73,7 +73,6 @@ class Navbar {
         const logout = div.querySelector("#logout");
         const signup = div.querySelector("#sign_up");
         const login = div.querySelector("#login");
-
         function state() {
           if (!userToken()) {
             logout.style.display = "none";
@@ -88,6 +87,7 @@ class Navbar {
         state();
 
         logout.addEventListener("click", (e) => {
+          console.log(userToken());
           localStorage.removeItem("jwtToken");
           state();
           window.location.reload();
