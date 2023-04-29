@@ -88,7 +88,6 @@ class Navbar {
         state();
 
         logout.addEventListener("click", (e) => {
-          console.log(userToken());
           localStorage.removeItem("jwtToken");
           state();
           window.location.reload();
