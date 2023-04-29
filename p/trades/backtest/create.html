@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enter Trading Information</title>
+    <style></style>
+  </head>
+  <link rel="stylesheet" href="../../../css/trades/backtest/create.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"
+  />
+
+  <body>
+    <div id="navbar"></div>
+
+    <section class="container">
+      <h1>new Trade</h1>
+      <!-- form -->
+      <form id="trade-form">
+        <!-- first row -->
+        <div class="row">
+          <!-- session -->
+          <div class="mb-3 col-sm-5">
+            <label class='form-label' for="session">Session:</label>
+            <select id="session" name="session" class="form-control">
+              <option value="London">London</option>
+              <option value="New York">New York</option>
+              <option value="Asian">Asian</option>
+            </select>
+          </div>
+          <!-- media -->
+          <div class="mb-3 col-sm-5">
+            <label class='form-label' for="media">Media:</label>
+            <input type="file" class="form-control" id="media" name="media" />
+          </div>
+          <!-- position -->
+          <div class="mb-3 col-sm-2">
+            <label class='form-label' for="position">Position:</label>
+            <select class="form-control" id="position" name="position">
+              <option value="Long" title="This is a long option">Long</option>
+              <option value="Short" title="This is a short option">
+                Short
+              </option>
+            </select>
+          </div>
+        </div>
+        <!-- second row -->
+        <div class="row">
+          <!-- setup -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="setup">Setup:</label>
+            <input type="text" class="form-control" id="setup" name="setup" />
+          </div>
+          <!-- riskToReward -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="riskToReward">Risk to Reward:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="riskToReward"
+              name="riskToReward"
+            />
+          </div>
+          <!-- currencyPair -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="currencyPair">Currency Pair:</label>
+            <input
+              type="text"
+              id="currencyPair"
+              list="currencyPairs"
+              class="form-control"
+            />
+            <datalist id="currencyPairs">
+              <option value="EUR/USD"></option>
+              <option value="GBB/USD"></option>
+              <option value="NAS100"></option>
+            </datalist>
+          </div>
+        </div>
+
+        <!-- third row -->
+        <div class="row">
+          <!-- igSentimentAtTime -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="igSentimentAtTime">IG Sentiment at Time:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="igSentimentAtTime"
+              name="igSentimentAtTime"
+            />
+          </div>
+
+          <!-- time -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="time">Time:</label>
+            <input type="time" class="form-control" id="time" name="time" />
+          </div>
+
+          <!-- date -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="date">Date:</label>
+            <input type="date" class="form-control" id="date" name="date" />
+          </div>
+        </div>
+
+        <!-- fourth row -->
+        <div class="row">
+          <!-- tradeOutcome -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="tradeOutcome">Trade Outcome:</label>
+            <select class="form-control" id="tradeOutcome" name="tradeOutcome">
+              <option value="">Please select</option>
+              <option value="Profit">Profit</option>
+              <option value="Loss">Loss</option>
+            </select>
+          </div>
+          <!-- profit -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="profit">Profit:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="profit"
+              name="profit"
+            />
+          </div>
+
+          <!-- moneyRisked -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="moneyRisked">Money Risked:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="moneyRisked"
+              name="moneyRisked"
+            />
+          </div>
+        </div>
+        <!-- fifth row -->
+        <div class="row">
+          <!-- lotSize -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="lotSize">Lot Size:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="lotSize"
+              name="lotSize"
+            />
+          </div>
+          <!-- news -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="news">News:</label>
+            <input type="text" class="form-control" id="news" name="news" />
+          </div>
+
+          <!-- newsType -->
+          <div class="mb-3 col-sm-4">
+            <label class='form-label' for="newsType">News Type:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="newsType"
+              name="newsType"
+            />
+          </div>
+        </div>
+        <!-- note -->
+        <div class="mb-3">
+          <label class='form-label' for="note">Note:</label>
+          <textarea class="form-control" id="note" name="note"></textarea>
+        </div>
+        <!-- submit button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+    <script type="module" src="../../../js/trades/backtest/create.js"></script>
+  </body>
+</html>

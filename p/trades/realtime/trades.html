@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading Information</title>
+  </head>
+  <body class="mb-5">
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="../../../css/trades/realtime/trades.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"
+    />
+    <!-- Header -->
+    <div id="header-container">
+
+    </div>
+
+    <h1>Trading Information</h1>
+
+    <a href="create.html">
+      <button class="">add trade</button>
+    </a>
+    <br />
+    <a href="../realtime/trades.html">
+      <input type="radio" name="trade" value="realtime" checked />
+      realtime<br />
+    </a>
+
+    <a href="../backtest/trades.html">
+      <input type="radio" name="trade" value="backtest" /> backtest<br />
+    </a>
+
+    <div id="slideshow">
+      <img src="" id="one" alt="Trading Image" />
+      <img
+        src="https://www.imgonline.com.ua/examples/random-pixels-big.png"
+        alt="Trading Image"
+      />
+    </div>
+    <button id="next-button">Next</button>
+
+    <ul id="trading-info">
+      <li>
+        <label for="session">Session:</label>
+        <span id="session">Morning/Afternoon/Evening session</span>
+      </li>
+      <li>
+        <label for="setup">Setup:</label>
+        <span id="setup">The trading setup used</span>
+      </li>
+      <li>
+        <label for="riskToReward">Risk-to-Reward:</label>
+        <span id="riskToReward"
+          >The risk-to-reward ratio used for the trade</span
+        >
+      </li>
+      <li>
+        <label for="currencyPair">Currency Pair:</label>
+        <span id="currencyPair">The currency pair traded</span>
+      </li>
+      <li>
+        <label for="note">Note:</label>
+        <span id="note">Any additional notes or comments about the trade</span>
+      </li>
+      <li>
+        <label for="igSentimentAtTime">IG Sentiment at Time of Trade:</label>
+        <span id="igSentimentAtTime"
+          >The sentiment of traders on IG at the time of the trade</span
+        >
+      </li>
+      <li>
+        <label for="time">Time:</label>
+        <span id="time">The time the trade was entered</span>
+      </li>
+      <li>
+        <label for="date">Date:</label>
+        <span id="date">The date the trade was entered</span>
+      </li>
+      <li>
+        <label for="tradeOutcome">Trade Outcome:</label>
+        <span id="tradeOutcome">The outcome of the trade (profit/loss)</span>
+      </li>
+      <li>
+        <label for="profit">Profit:</label>
+        <span id="profit"
+          >The profit or loss from the trade in your account currency</span
+        >
+      </li>
+      <li>
+        <label for="moneyRisked">Money Risked:</label>
+        <span id="moneyRisked"
+          >The amount of money risked on the trade in your account
+          currency</span
+        >
+      </li>
+      <li>
+        <label for="lotSize">Lot Size:</label>
+        <span id="lotSize">The lot size used for the trade</span>
+      </li>
+      <li>
+        <label for="news">News:</label>
+        <span id="news">The news or event that influenced the trade</span>
+      </li>
+      <li>
+        <label for="newsType">news-type</label>
+        <span id="newsType">The news or event that influenced the trade</span>
+      </li>
+    </ul>
+    <script type="module" src="../../../js/trades/realtime/trades.js"></script>
+  </body>
+</html>
