@@ -47,7 +47,7 @@ function signup() {
       if (res.token) {
         const token = res.token;
         localStorage.setItem("jwtToken", token);
-        window.location = "/index.html";
+        window.location = "https://feevah002.github.io/trading-journal-frontend/index.html";
       }
     })
     .catch((error) => {
