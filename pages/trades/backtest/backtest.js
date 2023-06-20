@@ -1,5 +1,5 @@
-import Requests from "../../utils/request.js";
-import TradeDataHandler from "../../utils/tradesHandler.js";
+import Requests from "../../../services/fetch.js";
+import TradeDataHandler from "../../../utils/tradesHandler.js";
 const { fillUI } = new TradeDataHandler();
 const { getReq } = new Requests();
 

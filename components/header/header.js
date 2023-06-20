@@ -1,4 +1,4 @@
-import Requests from "./request.js";
+import Requests from "../../services/fetch.js";
 const { userToken } = new Requests();
 class Navbar {
   getNavbar() {
