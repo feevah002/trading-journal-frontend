@@ -1,6 +1,6 @@
-import Navbar from "../../utils/navbar.js";
-import Requests from "../../utils/request.js";
-import TradeDataHandler from "../../utils/tradesHandler.js";
+import Navbar from "../../../components/header/header.js";
+import Requests from "../../../services/fetch.js";
+import TradeDataHandler from "../../../utils/tradesHandler.js";
 
 const { getNavbar } = new Navbar();
 

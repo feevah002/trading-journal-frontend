@@ -1,4 +1,4 @@
-import Requests from "../utils/request.js";
+import Requests from "../../../services/fetch.js";
 const { postSignup } = new Requests();
 function passwordUI() {
   const formOpenBtn = document.querySelector("#form-open"),

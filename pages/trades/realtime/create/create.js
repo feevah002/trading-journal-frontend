@@ -1,5 +1,6 @@
-import TradeDataHandler from "../../utils/tradesHandler.js";
-import Requests from "../../utils/request.js";
+import TradeDataHandler from "../../../../utils/tradesHandler.js";
+import Requests from "../../../../services/fetch.js";
+
 const { postNewTrade, userToken } = new Requests();
 const { getUIdata } = new TradeDataHandler();
 

@@ -1,4 +1,4 @@
-import Requests from "../utils/request.js";
+import Requests from "../../../services/fetch.js";
 
 const { postLogin } = new Requests();
 

@@ -54,7 +54,7 @@ class TradeDataHandler {
     } else {
       document.querySelector("body").innerHTML = `
     no data here
-    <a href='create.html'>create </a>
+    <a href='./create/create.html'>create </a>
     `;
     }
   }
