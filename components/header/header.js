@@ -2,7 +2,7 @@ import Requests from "../../services/fetch.js";
 const { userToken } = new Requests();
 class Navbar {
   getNavbar() {
-    fetch("https://feevah002.github.io/trading-journal-frontend/navbar.html")
+    fetch("https://feevah002.github.io/trading-journal-frontend/components/header/header.html")
       .then((response) => response.text())
       .then((html) => {
         const div = document.createElement("div");
